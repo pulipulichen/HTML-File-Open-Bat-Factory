@@ -1,0 +1,18 @@
+{
+  "elements": {
+    "app-main": {},
+    "style": {
+      "attributes": {
+        "lang": {}
+      }
+    },
+    "app-header": {}
+  },
+  "attributes": {
+    "v-on:click": {
+      "context": "button"
+    },
+    "src": {},
+    "v-model": {}
+  }
+}

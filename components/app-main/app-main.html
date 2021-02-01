@@ -1,0 +1,50 @@
+<form class="ui form segment">
+
+  
+  <div class="field">
+    <label>
+        Software Path
+      </label>
+      <input type="text" v-model="softwarePath" />
+  </div>
+  
+  <div class="field">
+      <label>
+        Directory Path
+      </label>
+      <input type="text" v-model="directoryPath" />
+  </div>
+  
+  <div class="field">
+    <label>
+        Filename Suffix
+      </label>
+      <input type="text" v-model="filenameSuffix" placeholder="." />
+  </div>
+  
+  <div class="field">
+    <label>
+      Filenames
+    </label>
+    <textarea v-model="filelist"></textarea>
+  </div>
+  
+  <div class="field">
+    <button type="button"
+            class="ui fluid button"
+            v-bind:class="{disabled: (files.length === 0)}"
+            v-on:click="downloadBatFiles">
+      Download
+    </button>
+  </div>
+  
+  <div class="field">
+    <a href="https://github.com/flier268/ConvertZZ/releases"
+       target="_blank"
+       rel="noreferrer noopener"
+       class="ui fluid button">
+      ConvertZZ
+    </a>
+  </div>
+  
+</form>
