@@ -1,4 +1,4 @@
-const PRECACHE = 'precache-v2021-0202-020511'
+const PRECACHE = 'precache-v2021-0202-020512'
 /*
  Copyright 2016 Google Inc. All Rights Reserved.
  Licensed under the Apache License, Version 2.0 (the "License");

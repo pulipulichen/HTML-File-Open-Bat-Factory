@@ -44,7 +44,7 @@ let appMain = {
           directoryPath = directoryPath + '/'
         }
       }
-      
+      //console.log(directoryPath)
       return directoryPath
     },
     softwarePathFormat () {
@@ -62,7 +62,7 @@ let appMain = {
         file = file.trim()
         
         let filename = `${file}${this.filenameSuffixFormat}.bat`
-        let content = `start "" "${this.softwarePathFormat}" "${this.directoryPathFormat}/${file}${this.filenameSuffixFormat}"`
+        let content = `start "" "${this.softwarePathFormat}" "${this.directoryPathFormat}${file}${this.filenameSuffixFormat}"`
         
         files.push({
           filename,
